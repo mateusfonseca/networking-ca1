@@ -1,5 +1,8 @@
 # DevOps Workflow Project
 
+**Author:** Mateus Fonseca Campos  
+**Email:** mateusff8@gmail.com
+
 **Dublin Business School**  
 **MSc in Information Systems with Computing**  
 **Network Systems and Administration - B9IS121**  

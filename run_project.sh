@@ -43,10 +43,16 @@ else # "bash run_project.sh" is the default deployment run
     terraform apply -input=false -auto-approve
 
     # wait for 10 seconds before trying to connect to the instance so that it has time to start
-    echo; echo -n "Waiting for server to initialize:"
+    echo; echo -n "Waiting for server to initialize: "
     for sec in {1..20}; do
         sleep 0.5
-        echo -n "."
+        echo -ne "\b"
+
+        if [ $sec -gt 1 ]; then
+            echo -n "="
+        fi
+    
+        echo -n ">"
     done
     echo "OK"
 
